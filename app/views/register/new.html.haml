@@ -1,0 +1,27 @@
+.forms
+  .title Register
+
+  = form_tag do
+
+    .field
+      = label_tag 'First Name'
+      = text_field_tag 'register[first_name]'
+
+    .field
+      = label_tag 'Last name:'
+      = text_field_tag 'register[last_name]'
+
+    .field
+      = label_tag 'Email:'
+      = text_field_tag 'register[email]'
+
+    .field
+      = label_tag 'Password:'
+      = password_field_tag 'register[password]'
+
+    .field
+      = label_tag 'Password confirmation:'
+      = password_field_tag 'register[password_confirmation]'
+
+    .field
+      = submit_tag  'Register', :class => 'secondary button'

@@ -1,0 +1,15 @@
+.forms
+  .title Login
+
+  = form_tag do
+
+    .field
+      = label_tag 'Email:'
+      = text_field_tag 'email'
+
+    .field
+      = label_tag 'Password:'
+      = password_field_tag 'password'
+
+    .field
+      = submit_tag 'Login', :class => 'secondary button'
