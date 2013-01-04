@@ -11,3 +11,18 @@
  *= require_self
  *= require_tree .
  */
+
+body a {
+  margin: 5px;
+}
+
+.bookmarklet-btn {
+  background: blue;
+  width: 100px;
+}
+
+.bookmarklet-btn a {
+  color: #FFF;
+  display: block;
+  padding: 30px;
+}

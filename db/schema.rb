@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130103192904) do
+ActiveRecord::Schema.define(:version => 20130103215748) do
+
+  create_table "items", :force => true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.string   "image"
+    t.decimal  "price"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "password_digest"

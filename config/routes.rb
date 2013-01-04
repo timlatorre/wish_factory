@@ -9,4 +9,7 @@ WishFactory::Application.routes.draw do
   get '/register' => 'register#new'
   post '/register' => 'register#create'
 
+  get '/items' => 'items#index'
+  get '/bookmarklet' => 'items#bookmarklet'
+
 end
