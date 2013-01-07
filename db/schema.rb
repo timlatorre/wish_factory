@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 20130103215748) do
   create_table "items", :force => true do |t|
     t.string   "name"
     t.string   "url"
-    t.string   "image"
+    t.string   "image_url"
     t.decimal  "price"
     t.integer  "user_id"
     t.datetime "created_at", :null => false

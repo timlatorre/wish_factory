@@ -11,5 +11,6 @@ WishFactory::Application.routes.draw do
 
   get '/items' => 'items#index'
   get '/bookmarklet' => 'items#bookmarklet'
+  post '/items/create' => 'items#create'
 
 end
